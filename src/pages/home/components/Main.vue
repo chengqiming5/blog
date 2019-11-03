@@ -2,21 +2,29 @@
 <div class="textList">
     <div class="area">
         <div class="title">最近更新</div>
-        <div class="item-wrapper">
-            <img class="item-img" src="static/images/1.jpg" alt=""/>
-            <div class="item-info">
-                <p class="item-name">xxxxx</p>
-                <p class="item-lastname">最后更新时间：2018，1}</p>
-            </div>
-        </div>
+        <router-link to ="/text/0001" tag="ul">
+            <li>
+                <div class="item-wrapper">
+                    <img class="item-img" src="static/images/1.jpg" alt=""/>
+                    <div class="item-info">
+                        <p class="item-name">xxxxx</p>
+                        <p class="item-lastname">最后更新时间：2018，1}</p>
+                    </div>
+                </div>
+            </li>
+        </router-link>
         <div class="title">推荐阅读</div>
-        <div class="item-wrapper">
-            <img class="item-img" src="static/images/1.jpg" alt=""/>
-            <div class="item-info">
-                <p class="item-name">xxxxx</p>
-                <p class="item-lastname">最后更新时间：2018，1</p>
-            </div>
-        </div>
+        <ul>
+            <li>
+                <div class="item-wrapper">
+                    <img class="item-img" src="static/images/1.jpg" alt=""/>
+                    <div class="item-info">
+                        <p class="item-name">xxxxx</p>
+                        <p class="item-lastname">最后更新时间：2018，1}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 </template>
