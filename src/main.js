@@ -6,6 +6,8 @@ import router from './router'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
+import api from './api/http.js'
+Vue.prototype.$api = api
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

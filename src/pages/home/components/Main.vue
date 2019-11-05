@@ -4,11 +4,15 @@
         <div class="title">最近更新</div>
         <router-link to ="/text/0001" tag="ul">
             <li>
-                <div class="item-wrapper">
-                    <img class="item-img" src="static/images/1.jpg" alt=""/>
+                <div class="item-wrapper"
+                    v-for="item of recent"
+                    :key="item.id"
+                    >
+                    <img class="item-img" :src="item.src" alt="imge"/>
                     <div class="item-info">
-                        <p class="item-name">xxxxx</p>
-                        <p class="item-lastname">最后更新时间：2018，1}</p>
+                        <p class="item-name">{{item.title}}</p>
+                        <p class="item-lastname">最后更新时间：{{item.time}}</p>
+                        <div class="item-label">{{item.label}}</div>
                     </div>
                 </div>
             </li>
@@ -30,7 +34,10 @@
 </template>
 <script>
 export default {
-  name: 'HomeMain'
+  name: 'HomeMain',
+  props: {
+      recent: Array
+  }
 }
 </script>
 <style lang="stylus" scoped>
