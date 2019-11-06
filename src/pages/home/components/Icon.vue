@@ -1,21 +1,21 @@
 <template>
     <div class="icons">
-            <div class="icon">
-                <div class="icon-img"> &#xe62d;</div>
-                <p class="icon-desc">文章合集</p>
-            </div>
-            <div class="icon">
-                <div class="icon-img"> &#xe620;</div>
-                <p class="icon-desc">读书记录</p>
-            </div>
-            <div class="icon">
-                <div class="icon-img">&#xe628;</div>
-                <p class="icon-desc">技术体会</p>
-            </div>
-            <div class="icon">
-                <div class="icon-img"> &#xe621;</div>
-                <p class="icon-desc">关于自己</p>
-            </div>
+        <router-link to ="/textlist/0001" tag="div" class="icon" >
+            <div class="icon-img"> &#xe62d;</div>
+            <p class="icon-desc">文章合集</p>
+        </router-link>
+        <div class="icon">
+            <div class="icon-img"> &#xe620;</div>
+            <p class="icon-desc">读书记录</p>
+        </div>
+        <div class="icon">
+            <div class="icon-img">&#xe628;</div>
+            <p class="icon-desc">技术体会</p>
+        </div>
+        <div class="icon">
+            <div class="icon-img"> &#xe621;</div>
+            <p class="icon-desc">关于自己</p>
+        </div>
     </div>
 </template>
 <script>

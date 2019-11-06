@@ -65,4 +65,9 @@ export default {
         .item-time
             flex 1
             line-height .4rem
+        .item-label
+            float left
+            padding .1rem
+            border .02rem solid #ccc 
+            border-radius .06rem
 </style>
